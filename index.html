@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Billing the Kid</title>
 </head>
 <body>
@@ -14,23 +15,26 @@
                 <li><a href="#">My Profile</a></li>
                 <li><a href="#">This Month</a></li>
                 <li><a href="#">Settings</a></li>
+                <li><a href="#"><img src="img/menu.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
     <section class="intro">
-        <p>Welcome to</p>
-        <h1>Billing the Kid</h1>
-        <p>Your personal financial manager. Online.</p>
-        <div>
-            <a href="#">Startup</a>
-            <a href="#">Local business</a>
-            <a href="#">Medium company</a>
+        <div id="intro-text">
+            <p>Welcome to</p>
+            <h1>Billing the Kid</h1>
+            <p id="info">Your personal financial manager. Online.</p>
         </div>
     </section>
-    <section>
-        <img src="img/fin1.jpg" alt="calculator">
-        <img src="img/fin2.jpeg" alt="cash">
-        <img src="img/fin3.jpg" alt="business">
+    <div class="links">
+        <a href="#">Startup</a>
+        <a href="#">Small business</a>
+        <a href="#">Medium company</a>
+    </div>
+    <section class="images">
+        <img src="img/fin1.jpg" alt="calculator" class="img-left">
+        <img src="img/fin2.jpeg" alt="cash" class="img-right">
+        <img src="img/fin3.jpg" alt="business" class="img-left">
     </section>
     <section class="pricing">
         <h2>Pricing</h2>
@@ -39,29 +43,29 @@
             <tr>
                 <td></td>
                 <td></td>
-                <th colspan="2">Prices</th>
+                <th colspan="2" class="th1">Prices</th>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <th>1 Year</th>
-                <th>2 Years</th>
+                <th class="th2">1 Year</th>
+                <th class="th2">2 Years</th>
             </tr>
             <tr>
-                <th rowspan="3">Location</th>
-                <th>Startup</th>
+                <th rowspan="3" class="th1">Location</th>
+                <th class="th2">Startup</th>
                 <td>$3000</td>
                 <td>$3000</td>
             </tr>
             <tr>
             
-                <th>Small business</th>
+                <th class="th2">Small business</th>
                 <td>$3000</td>
                 <td>$3000</td>
             </tr>
             <tr>
             
-                <th>Medium company</th>
+                <th class="th2">Medium company</th>
                 <td>$3000</td>
                 <td>$3000</td>
             </tr>
@@ -70,18 +74,19 @@
     <section class="contact">
         <h2>Contact Us</h2>
         <iframe src="https://www.google.com/maps/d/embed?mid=1CzO3A1Dgwse-TMDfVS0NFzhDhh0" width="400" height="300"></iframe>
+        <div class="clearfix"></div>
         <form action="get">
             <select name="gender" id="gender">
                 <option value="male">Mr.</option>
                 <option value="female">Mrs.</option>
             </select>
-            <input type="text" name="fullname" placeholder="Your name"> <br>
+            <input type="text" name="fullname" placeholder="Your name" id="fullname"> <br>
             <input type="text" name="email" placeholder="E-mail"> <br>
-            <input type="text" name="message" placeholder="Your message..."> <br>
+            <input type="text" name="message" placeholder="Your message..." id="message"> <br>
         </form>
     </section>
     <footer>
-        <p>Copyright &copy; 2018. Billing the Kid</p>
+        <p>Copyright &copy; 2018. <span>Billing the Kid</span></p>
     </footer>
 </body>
 </html>
