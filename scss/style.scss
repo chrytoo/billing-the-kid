@@ -174,8 +174,8 @@ nav {
     text-align: center;
     padding-top: 50px;
     background-color: $light_gray2;
-    height: 500px;
-    margin-bottom: 0;
+    height: 700px;
+    margin-bottom: 0px;
 
     h2 { 
         text-transform: uppercase; 
@@ -191,6 +191,8 @@ nav {
     form {
         background-color: $red;
         display: inline-block;
+        position: relative;
+        
         width: 40%;
         height: 200px;
         padding: 10px;
@@ -219,6 +221,7 @@ nav {
 }
 
 footer {
+    position: absolute;
     width: 100%;
     text-align: center;
     background-color: $dark_blue;
@@ -227,5 +230,56 @@ footer {
     color: $light_gray2;
     span {
         color: $red;
+    }
+}
+
+@media screen and(max-width: 950px) {
+
+    iframe {
+        display: block;
+    }
+    form {
+        display: block;
+
+    }
+}
+
+@media screen and(max-width: 650px) {
+    nav {
+        height: auto;
+
+        ul>li {
+            float: right;
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding-top: 80px;
+            padding-bottom: 1px;
+            a>img {
+                position: absolute;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .links {
+        margin-bottom: 70px;
+        a {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .images {
+        padding-left: 10px;
+
+        div {
+            display: block;
+
+            img { width: 100px; display: block; }
+        }
+
+
     }
 }
