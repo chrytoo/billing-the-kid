@@ -17,6 +17,7 @@ header {
 nav {
   position: fixed;
   width: 100%;
+  height: 4em;
   background-color: #374249;
 }
 nav ul {
@@ -25,15 +26,24 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  padding: 1em;
+  vertical-align: middle;
+  padding: 1.4em;
 }
 nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
+  padding-right: 20px;
 }
 nav ul li a img {
-  width: 40px;
-  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 64px;
+  background-color: #f38181;
+}
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 .intro {
@@ -73,25 +83,36 @@ nav ul li a img {
   border: 1px solid #cfd1d3;
   border-radius: 20px;
 }
+.links a:hover {
+  background-color: #cfd1d3;
+  color: #FFFFFF;
+}
 
 .images {
   width: 100%;
   background-color: #f3f7f9;
-  margin: 0 auto;
+  padding-left: 500px;
+}
+.images div:hover .img-text {
+  visibility: visible;
 }
 .images img {
-  margin: 0 auto;
-  display: block;
-  height: 200px;
-  width: 200px;
   border-radius: 50%;
-  padding: 30px;
+  width: 200px;
+  height: auto;
+  padding: 10px;
 }
-.images .img-left {
-  margin-left: 600px;
+.images .img-text {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 10px;
+  visibility: hidden;
 }
-.images .img-right {
-  margin-right: 800px;
+.images .img-text h4 {
+  text-transform: uppercase;
+}
+.images .img-text p {
+  color: #f38181;
 }
 
 .pricing {
